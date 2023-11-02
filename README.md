@@ -71,7 +71,7 @@ In all, this configuration will provision 22 resources.
 
    b. Once there you should see on the left a button labeled "Secret and Variables", click on that. From that dropdown menu, click on the "Actions" button.
 
-   c. From the Actions panel that would open, click on the "New repository secret" button located on the right hand corner.
+   c. From the Actions panel that would open, click on the "New repository secret" button located on the right-hand corner.
 
    d. Add your AWS_SECRET_ACCESS_KEY and click the "Add secret" button.
 
@@ -83,7 +83,10 @@ In all, this configuration will provision 22 resources.
 
 4. Clicking on the "Terraform" tab under the actions.yaml should open up a successful Terraform log file as shown below.
 
+[action workflow]
 
-6. 
+5. Just like working in your local environment, you can copy and paste the load balancer dns name that is outputed under the terraform apply log (above) after your resources have been created and are running into your browser address bar and hit enter.
+
+6. You should get a response Congratulating you for installing Nginix.
 
 
