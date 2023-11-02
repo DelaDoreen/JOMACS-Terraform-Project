@@ -187,7 +187,7 @@ variable "lb_sg_name" {
 variable "web" {
   default     = 80
   type        = number
-  description = "web traffic port"
+  description = "web trafic port"
 }
 
 
