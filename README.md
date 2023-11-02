@@ -14,7 +14,8 @@ This Terraform project deploys a secure VPC environment in AWS with an EC2 insta
 3. The modules directory houses two sub-directories that contain two reusable modules named *vpc* and *ec2*
 4. These two modules contain all the configuration files needed to provision the resources required. These files include - *vpc.tf, ec2.tf variable.tf, store.tf, data.tf, output.tf, providers.tf and script.sh*.
     
-![terraform_structure](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/8ccba2b3-2486-4c6c-9963-d8c71949adf3)
+![terraform_structure](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/5bd11177-2881-4c71-9995-000e4403a30b)
+
 
 
 ## Resources that will be deployed
@@ -42,10 +43,11 @@ In all, this configuration will provision 22 resources.
 21. *SSM Parameter Store 3*
 22. *SSM Parameter Store 4*
 
-![provisioned_resources](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/36dd76af-2295-49f9-aa64-96c8adc0f3cb)
+![provisioned_resources](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/b99180aa-e894-4b6c-b291-48292b3a81c8)
+
+## Cloud Architetcture
 
 
-## Cloud Architecture
 
 ## How to deploy the infrastructure.
 1. *Fork or clone* the repository to your local environment.
@@ -58,9 +60,10 @@ In all, this configuration will provision 22 resources.
 
 ## Steps to validate the setup 
 1. To validate this setup, copy and paste the load balancer dns name that is outputed after your resources have been created and are running into your browser address bar and hit enter.
-2. You should get a display of **Congratulation! Doreen Dela. You have installed Nginx** - just like in the image below:
+2. You should get a display of **Congratulations! Doreen Dela. You have installed Nginx** - just like in the image below:
 
-![proof_of_setup](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/0690d705-ea61-442e-b144-fa5ae3ad9ee1)
+
+![proof_of_setup](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/d3a2c135-d975-4874-bc28-02c30d567f09)
 
 
 ## CI/CD - Deploying via GitHub Actions (Automation)
@@ -79,11 +82,13 @@ In all, this configuration will provision 22 resources.
    
 3. Subsequently select the "Actions" tab and select the requisite workflow. This should open up the workflow as shown below.
    
-![githubactions_summary_test_success]
+![workflow](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/f26a4565-2a6b-46b0-9a6a-62fdbf7d11f2)
+
 
 4. Clicking on the "Terraform" tab under the actions.yaml should open up a successful Terraform log file as shown below.
 
-[action workflow]
+![terraform_log_files](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/0f1b0db1-0ca8-43b5-a137-8b996ecabeda)
+
 
 5. Just like working in your local environment, you can copy and paste the load balancer dns name that is outputed under the terraform apply log (above) after your resources have been created and are running into your browser address bar and hit enter.
 
