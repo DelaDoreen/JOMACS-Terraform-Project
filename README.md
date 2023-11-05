@@ -45,8 +45,8 @@ In all, this configuration will provision 22 resources.
 
 ![provisioned_resources](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/b99180aa-e894-4b6c-b291-48292b3a81c8)
 
-## Cloud Architetcture
-
+## Cloud Architecture
+![Untitled Diagram drawio](https://github.com/DelaDoreen/JOMACS-Terraform-Project/assets/142509085/3eebf0fc-abb8-4f72-a621-f2275f679323)
 
 
 ## How to deploy the infrastructure.
